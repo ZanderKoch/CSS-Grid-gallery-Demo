@@ -1,0 +1,51 @@
+body{
+    margin: 0px;
+    min-height: 100%;
+}
+
+.wrapper{
+    
+    display: grid; //makes wrapper display as a grid
+    grid-template-areas: //defines the rows in our wrapper's layout
+        "navbar"
+        "main"
+        "footer";
+    grid-template-rows: min-content auto min-content;
+    min-height: 100vh;
+    //makes sure the site always extends to the bottom of the screen
+    
+    nav.expanded{ //selecting all navs directly within wrapper, only navbar in our case
+        grid-area: navbar;
+        font-size: xx-large;
+        img{
+            height: 1em;
+        }
+
+        display: grid;
+        grid-template-areas:
+            "logotext expandbutton"
+            "contents contents";
+
+        grid-template-columns: auto auto;
+        grid-template-rows: 1em ;
+
+        :nth-child(1){
+            grid-area: logotext;
+            >*{
+                display:inline-block;
+            }
+        }
+
+
+        :nth-child(2){
+            grid-area: expandbutton;
+            text-align: right;
+        }
+
+        :nth-child(3){
+            grid-area: contents;
+        }
+    
+    }
+    
+}

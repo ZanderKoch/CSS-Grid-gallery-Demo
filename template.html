@@ -12,24 +12,30 @@
 <body>
   <div class="wrapper">
     <!-- navbar -->
-    <nav>
-      <img src="img/logo.png" href="" alt="picture of the sustaining logo">
-      <header>
-        <a href="">Sustaining</a>  
-      </header>
+    <nav class="expanded">
+      <!-- logo and text -->
+      <div>
+        <img src="img/logo.png" href="" alt="picture of the sustaining logo">
+        <header>
+          <a href="">Sustaining</a>  
+        </header>
+      </div>
+      
 
       <!-- navbar expand/retract button
       could just aswell be a fontawesome icon -->
-      <span id=navbqrExpand>
+      <span id=navbarExpandButton>
         &equiv; <!-- three vertical lines, can be replaced with an icon -->
       </span>
 
+      
       <div>
         <a href="">Home</a>
         <a href="">Gallery & Vote</a>
         <a href="">About Us</a>
         <!-- putting both the text and profile icon in a div
-        so it's easier to keep them together-->
+        so it's easier to keep them together while still allowing more items 
+        to be added to navbar. There could be a better solution-->
         <div>
           <a href="">Profile</a>
           <img src="img/Profile_icon.png" alt="profile icon">

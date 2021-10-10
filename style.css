@@ -1,0 +1,57 @@
+body {
+  margin: 0px;
+  min-height: 100%;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "navbar" "main" "footer";
+  -ms-grid-rows: min-content auto min-content;
+      grid-template-rows: -webkit-min-content auto -webkit-min-content;
+      grid-template-rows: min-content auto min-content;
+  min-height: 100vh;
+}
+
+.wrapper nav.expanded {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: navbar;
+  font-size: xx-large;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "logotext expandbutton" "contents contents";
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: 1em;
+      grid-template-rows: 1em;
+}
+
+.wrapper nav.expanded img {
+  height: 1em;
+}
+
+.wrapper nav.expanded :nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logotext;
+}
+
+.wrapper nav.expanded :nth-child(1) > * {
+  display: inline-block;
+}
+
+.wrapper nav.expanded :nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: expandbutton;
+  text-align: right;
+}
+
+.wrapper nav.expanded :nth-child(3) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: contents;
+}
+/*# sourceMappingURL=style.css.map */
