@@ -54,4 +54,8 @@ body {
   -ms-grid-column-span: 2;
   grid-area: contents;
 }
+
+.wrapper nav.expanded :nth-child(3) > * {
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */

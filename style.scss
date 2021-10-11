@@ -44,6 +44,9 @@ body{
 
         :nth-child(3){
             grid-area: contents;
+            >*{
+                width: 100%;
+            }
         }
     
     }
